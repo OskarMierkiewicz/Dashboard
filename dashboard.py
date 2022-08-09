@@ -16,9 +16,9 @@ import pandas as pd
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.COSMO])
 
 
-poverty_data = pd.read_csv('/Users/oskarmierkiewicz/Desktop/dash/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash/data/PovStatsData.csv')
-poverty = pd.read_csv('/Users/oskarmierkiewicz/Desktop/dash/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash/data/poverty.csv', low_memory=False)
-series = pd.read_csv('/Users/oskarmierkiewicz/Desktop/dash/Interactive-Dashboards-and-Data-Apps-with-Plotly-and-Dash/data/PovStatsSeries.csv')
+poverty_data = pd.read_csv('.../PovStatsData.csv')
+poverty = pd.read_csv('.../poverty.csv', low_memory=False)
+series = pd.read_csv('.../PovStatsSeries.csv')
 
 gini = 'GINI index (World Bank estimate)'
 gini_df = poverty[poverty[gini].notna()]
